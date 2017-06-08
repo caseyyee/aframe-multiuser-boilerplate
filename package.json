@@ -11,7 +11,7 @@
     "watch": "watchify client/js/index.js -o _build/index.js -v",
     "prebuild": "shx mkdir -p _build",
     "build": "browserify client/js/index.js -o _build/index.js",
-    "deploy": "git checkout master && git pull --rebase && git push git@github.com:caseyyee/webvr-ar-multiuser.git master",
+    "deploy": "git checkout master && git pull --rebase && git push git@github.com:caseyyee/webvr-multiuser-boilerplate.git master",
     "easyrtc-install": "cd ./node_modules/easyrtc && npm install",
     "favicon": "convert -density 400 -background transparent client/img/icon-190.png -define icon:auto-resize=16,32,48,64,128 -colors 256 client/favicon.ico",
     "postinstall": "npm run easyrtc-install",
