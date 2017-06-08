@@ -1,0 +1,47 @@
+<!doctype html>
+  <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000">
+    <title>A-Frame Multiuser Boilerplate</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="easyrtc/easyrtc.js"></script>
+
+    <script>
+      function onConnect () {
+        console.log('on connect');
+        NAF.entities.createAvatar('#avatar-template', '0 1.6 0', '0 0 0');
+      }
+    </script>
+  </head>
+  <body>
+    <a-scene network-scene="audio: false;">
+      <a-assets>
+        <!-- avatar template -->
+        <script id="avatar-template" type="text/html">
+          <a-entity class="avatar">
+            <a-sphere class="head" color="#5985ff" scale="0.25 0.2 0.2" random-color></a-sphere>
+            <a-entity class="face" position="0 0.05 0">
+              <a-sphere class="eye" color="#efefef" position="0.08 0.1 -0.10" scale="0.06 0.06 0.06">
+                <a-sphere class="pupil" color="#000" position="0 0 -1" scale="0.2 0.2 0.2"></a-sphere>
+              </a-sphere>
+              <a-sphere class="eye" color="#efefef" position="-0.08 0.1 -0.10" scale="0.06 0.06 0.06">
+                <a-sphere class="pupil" color="#000" position="0 0 -1" scale="0.2 0.2 0.2"></a-sphere>
+              </a-sphere>
+            </a-entity>
+          </a-entity>
+        </script>
+      </a-assets>
+      <a-gradient-sky material="shader: gradient; topColor: 127 204 255; bottomColor: 213 245 255"></a-gradient-sky>
+
+      <!-- ground -->
+      <a-entity geometry="primitive: circle; radius: 10;" rotation="-90 0 0" position="0 -0.1 0" material="color: #B2AD7D; metalness: 0.1; roughness: 0.8"></a-entity>
+
+      <a-camera></a-camera>
+    </a-scene>
+  </body>
+</html>

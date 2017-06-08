@@ -1,0 +1,38 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "WebVR Smasher",
+  "short_name": "WebVR Smasher",
+  "description": "Mash and smash!",
+  "start_url": "./?src=manifest",
+  "display": "fullscreen",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "icons": [
+    {
+      "src": "img/icon-190.png",
+      "sizes": "190x190",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "img/icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64 128x128",
+      "type": "image/x-icon"
+    }
+  ],
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ]
+}
