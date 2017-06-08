@@ -1,5 +1,5 @@
 
-# AR A-Frame Multiuser Boilerplate
+# A-Frame Multiuser Boilerplate
 
 ## [Try it out!](http://aframe-multiuser-boilerplate.herokuapp.com/)
 
@@ -18,7 +18,7 @@ git clone git@github.com:caseyyee/aframe-multiuser-boilerplate.git
 Install and run
 
 ```bash
+cd aframe-multiuser-boilerplate
 npm install
 npm run start
 ```
-
