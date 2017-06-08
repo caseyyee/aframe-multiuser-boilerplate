@@ -1,9 +1,9 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "WebVR Smasher",
-  "short_name": "WebVR Smasher",
-  "description": "Mash and smash!",
+  "name": "A-Frame multiuser boilerplate",
+  "short_name": "A-Frame multiuser boilerplate",
+  "description": "A-Frame multiuser boilerplate",
   "start_url": "./?src=manifest",
   "display": "fullscreen",
   "theme_color": "#000",

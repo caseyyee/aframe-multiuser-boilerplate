@@ -1,7 +1,7 @@
 {
   "name": "aframe-multiuser-boilerplate",
   "version": "1.0.0",
-  "description": "Multiuser boilerplate project",
+  "description": "A-Frame multiuser boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
